@@ -85,6 +85,7 @@ label {
   background-image: url("../img/header/asosiy.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 30%;
 }
 .container {
   max-width: 1433px;
@@ -405,6 +406,9 @@ label {
   display: flex;
   gap: 20px;
   align-items: center;
+
+  align-items: center;
+  justify-content: center;
 }
 .social-text {
   font-family: Inter;
@@ -436,7 +440,7 @@ label {
   width: 100%;
   height: 100%;
   background-color: #6e6e6ec1;
-  padding: 331px 0;
+  padding: 201px 0;
   scale: 1;
   display: none;
   z-index: 9999;
@@ -678,6 +682,10 @@ option {
   }
 }
 @media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
   .navbar-item {
     padding: 200px 30px;
   }
@@ -718,7 +726,6 @@ option {
   }
   .coloR {
     font-size: 28px;
-    margin-left: 20px;
   }
   .arrow-top,
   .arrow-bottom {
@@ -738,7 +745,7 @@ option {
     gap: 20px;
   }
   .singIn {
-    padding: 433pxpx 0;
+    padding: 103px 0;
   }
 }
 @media (max-width: 600px) {
@@ -779,7 +786,7 @@ option {
     padding: 40px 10px;
   }
   .singIn {
-    padding: 177px 10px;
+    padding: 107px 10px;
   }
   .form {
     max-width: 460px;
@@ -791,6 +798,9 @@ option {
     right: 10px;
     top: 10px;
   }
+   .social-icon{
+      flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 320px) {
@@ -806,6 +816,7 @@ option {
   .singIn {
     padding: 28px 10px;
   }
+   
 }
 
 /* js class */
@@ -885,14 +896,19 @@ option {
 .scrolled {
   background-color: #444444;
 }
-
+.accordion-header{
+  padding: 0 !important;
+}
 .accordion-item {
   border: none !important;
    box-shadow: none !important;
+   border-radius:0 !important;
+   padding: 0 !important;
 }
 .accordion-item.accordion-button:not(.collapsed) {
   border-bottom: 1px solid #ffffff !important;
   box-shadow: none !important;
+  border-radius:0 !important;
 }
 .accordion-button {
   background-color: #272727 !important;
@@ -900,23 +916,37 @@ option {
   border: none !important;
   border-bottom: 1px solid #ffffff !important;
    box-shadow: none !important;
+   border-radius:0 !important;
+   padding: 10px 0 !important;
 }
 .accordion-button.accordion-button:not(.collapsed) {
   border: none !important;
    box-shadow: none !important;
+   border-radius:0 !important;
 }
 .accordion-button::after {
   filter: invert(100%);
    box-shadow: none !important;
+   border-radius:0 !important;
+}
+.accordion-button::after:not(.collapsed){
+    filter: invert(100%) !important;
 }
 .accordion-button:focus {
   box-shadow: none !important;
+   box-shadow: none !important;
+   border-radius:0 !important;
+}
+.accordion-button:not(.collapsed):focus{
+    background-color: #272727 !important;
+  color: #ededed !important;
+  box-shadow: none;
    box-shadow: none !important;
 }
 .accordion-button:not(.collapsed) {
   background-color: #272727 !important;
   color: #ededed !important;
-  box-shadow: none;
+  box-shadow: none !important;
    box-shadow: none !important;
 }
 .accordion-body {
@@ -927,9 +957,21 @@ option {
 .accordion-body:not(.collapsed) {
   border-bottom: 1px solid #ffffff !important;
    box-shadow: none !important;
+   border-radius:0 !important;
+}
+.accordion-item {
+    border: none !important;
+    border-radius:0 !important;
+}
+.accordion {
+    border: none !important;
+    box-shadow: none !important;
+    border-radius:0 !important;
 }
 
-
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23111111' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
 
 .custom-flush .accordion-button {
   background-color: #dbdbdb !important;
@@ -956,11 +998,14 @@ option {
 }
 .custom-flush .accordion-button.no-bg {
   background: transparent !important;
+  border: 0 !important;
 }
 .custom-flush .accordion-item.no-bg {
   background: transparent !important;
+  border: 0 !important;
 }
 .remove-bg .accordion-button,
 .remove-bg .accordion-body {
   background-color: transparent !important;
+  border: 0 !important;
 }
