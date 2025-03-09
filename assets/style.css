@@ -689,7 +689,7 @@ option {
   .navbar-item {
     padding: 200px 30px;
   } 
-  
+
   .h1 {
     font-size: 34px;
     margin-bottom: 20px;
@@ -941,19 +941,20 @@ option {
 .accordion-button:not(.collapsed):focus{
     background-color: #272727 !important;
   color: #ededed !important;
-  box-shadow: none;
+   border-radius:0 !important;
    box-shadow: none !important;
 }
 .accordion-button:not(.collapsed) {
   background-color: #272727 !important;
   color: #ededed !important;
   box-shadow: none !important;
-   box-shadow: none !important;
+   border-radius:0 !important;
 }
 .accordion-body {
   background-color: #272727;
   color: #ededed;
    box-shadow: none !important;
+      border-radius:0 !important;
 }
 .accordion-body:not(.collapsed) {
   border-bottom: 1px solid #ffffff !important;
