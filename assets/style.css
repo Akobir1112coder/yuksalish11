@@ -53,8 +53,8 @@ label {
   top: 0;
   background: transparent;
   width: 100%;
-   transition: 0.3s all linear;
-   z-index: 99;
+  transition: 0.3s all linear;
+  z-index: 99;
 }
 .navbar {
   max-width: 1433px;
@@ -85,7 +85,6 @@ label {
   background-image: url("../img/header/asosiy.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 30%;
 }
 .container {
   max-width: 1433px;
@@ -440,8 +439,9 @@ label {
   padding: 331px 0;
   scale: 1;
   display: none;
+  z-index: 9999;
 }
-.ddd{
+.ddd {
   flex-wrap: nowrap;
   display: flex;
 }
@@ -532,17 +532,14 @@ option {
   line-height: 100%;
   color: #ffffff;
   max-width: 254px;
-  
 }
 
-.form-x{
+.form-x {
   position: absolute;
   right: 40px;
   top: 43px;
   cursor: pointer;
 }
-
-
 
 /* <-...................-> */
 
@@ -569,9 +566,18 @@ option {
   .footer {
     padding: 40px 60px;
   }
-  .singIn{
+  .singIn {
     padding: 156px 0;
   }
+  .accordion-item,
+      .accordion-item.accordion-button:not(.collapsed),
+      .accordion-button,
+      .accordion-button:not(.collapsed),
+      .accordion-body,
+      .accordion-body:not(.collapsed) {
+        border: none !important;
+        border-bottom: none !important;
+      }
 }
 @media (max-width: 1280px) {
   .navbar {
@@ -593,12 +599,11 @@ option {
   .footer {
     padding: 40px 30px;
   }
-   .singIn{
+  .singIn {
     padding: 111px 0;
   }
 }
 @media (max-width: 1200px) {
- 
   .menu {
     display: none;
   }
@@ -732,7 +737,7 @@ option {
     flex-direction: column;
     gap: 20px;
   }
-   .singIn{
+  .singIn {
     padding: 433pxpx 0;
   }
 }
@@ -773,13 +778,13 @@ option {
   .box5 {
     padding: 40px 10px;
   }
-   .singIn{
+  .singIn {
     padding: 177px 10px;
   }
-  .form{
+  .form {
     max-width: 460px;
   }
-  .chek-label{
+  .chek-label {
     font-size: 12px;
   }
   .form-x {
@@ -798,7 +803,7 @@ option {
   .box3 {
     display: none;
   }
-    .singIn{
+  .singIn {
     padding: 28px 10px;
   }
 }
@@ -848,38 +853,114 @@ option {
   }
 }
 
-.singIn-block{
+.singIn-block {
   display: block;
   animation: scale 0.6s linear;
 }
 @keyframes scale {
-  0%{
+  0% {
     scale: 0;
   }
-  50%{
+  50% {
     scale: 0.4;
   }
-  100%{
+  100% {
     scale: 1;
   }
-  
 }
-.singIn-block2{
+.singIn-block2 {
   animation: scale2 0.6s linear;
 }
 @keyframes scale2 {
-  0%{
+  0% {
     scale: 1;
   }
-  50%{
+  50% {
     scale: 0.4;
   }
-  100%{
+  100% {
     scale: 0;
   }
-  
 }
 .scrolled {
-  background-color: #444444; 
- 
+  background-color: #444444;
+}
+
+.accordion-item {
+  border: none !important;
+   box-shadow: none !important;
+}
+.accordion-item.accordion-button:not(.collapsed) {
+  border-bottom: 1px solid #ffffff !important;
+  box-shadow: none !important;
+}
+.accordion-button {
+  background-color: #272727 !important;
+  color: #ededed !important;
+  border: none !important;
+  border-bottom: 1px solid #ffffff !important;
+   box-shadow: none !important;
+}
+.accordion-button.accordion-button:not(.collapsed) {
+  border: none !important;
+   box-shadow: none !important;
+}
+.accordion-button::after {
+  filter: invert(100%);
+   box-shadow: none !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+   box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #272727 !important;
+  color: #ededed !important;
+  box-shadow: none;
+   box-shadow: none !important;
+}
+.accordion-body {
+  background-color: #272727;
+  color: #ededed;
+   box-shadow: none !important;
+}
+.accordion-body:not(.collapsed) {
+  border-bottom: 1px solid #ffffff !important;
+   box-shadow: none !important;
+}
+
+
+
+.custom-flush .accordion-button {
+  background-color: #dbdbdb !important;
+  color: #000 !important;
+  box-shadow: none !important;
+}
+.custom-flush .accordion-button:not(.collapsed) {
+  background-color: #dbdbdb !important;
+  color: #000 !important;
+  box-shadow: none !important;
+}
+.custom-flush .accordion-button:focus {
+  box-shadow: none !important;
+}
+.custom-flush .accordion-body {
+  background-color: #dbdbdb !important;
+  color: #000 !important;
+}
+.custom-flush .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23666666' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+.custom-flush .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23666666' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+.custom-flush .accordion-button.no-bg {
+  background: transparent !important;
+}
+.custom-flush .accordion-item.no-bg {
+  background: transparent !important;
+}
+.remove-bg .accordion-button,
+.remove-bg .accordion-body {
+  background-color: transparent !important;
 }
