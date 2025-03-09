@@ -127,7 +127,8 @@ label {
 /* box2 start */
 .box2,
 .box4,
-.box6 {
+.box6,
+.box3 {
   padding: 160px 240px;
 }
 .box2_db {
@@ -218,7 +219,7 @@ label {
 }
 .full {
   display: flex;
-  margin-bottom: 23px;
+
   align-items: center;
 }
 .full-h3 {
@@ -561,7 +562,8 @@ option {
   }
   .box2,
   .box4,
-  .box6 {
+  .box6,
+  .box3 {
     padding: 160px 60px;
   }
   .box5 {
@@ -574,14 +576,14 @@ option {
     padding: 156px 0;
   }
   .accordion-item,
-      .accordion-item.accordion-button:not(.collapsed),
-      .accordion-button,
-      .accordion-button:not(.collapsed),
-      .accordion-body,
-      .accordion-body:not(.collapsed) {
-        border: none !important;
-        border-bottom: none !important;
-      }
+  .accordion-item.accordion-button:not(.collapsed),
+  .accordion-button,
+  .accordion-button:not(.collapsed),
+  .accordion-body,
+  .accordion-body:not(.collapsed) {
+    border: none !important;
+    border-bottom: none !important;
+  }
 }
 @media (max-width: 1280px) {
   .navbar {
@@ -594,7 +596,8 @@ option {
   }
   .box2,
   .box4,
-  .box6 {
+  .box6,
+  .box3 {
     padding: 91px 30px;
   }
   .box5 {
@@ -662,7 +665,8 @@ option {
 @media (max-width: 1024px) {
   .box2,
   .box4,
-  .box6 {
+  .box6,
+  .box3 {
     padding: 79px 30px;
   }
   .grid-items {
@@ -684,11 +688,11 @@ option {
 @media (max-width: 768px) {
   .container {
     width: 100%;
-    padding: 0;
+    padding: 10px;
   }
   .navbar-item {
-    padding: 200px 30px;
-  } 
+    padding: 150px 30px;
+  }
 
   .h1 {
     font-size: 34px;
@@ -702,18 +706,19 @@ option {
   }
   .box2,
   .box4,
-  .box6 {
+  .box6,
+  .box3 {
     padding: 80px 30px;
   }
   .full-text {
     margin-left: 0;
   }
-  .full {
-    margin-bottom: 20px;
-  }
+
   .full-span {
     margin-left: 42px;
     font-size: 24px;
+    padding-right: 10px;
+       font-size: 18px;
   }
   .full-h3 {
     font-size: 32px;
@@ -755,15 +760,20 @@ option {
   }
 }
 @media (max-width: 480px) {
+  .full-h3 img {
+    width: 40px;
+    height: 40px;
+  }
   .navbar-item {
-    padding: 200px 10px;
+    padding: 100px 10px;
   }
   .pt-885 {
     padding-top: 697px;
   }
   .box2,
   .box4,
-  .box6 {
+  .box6,
+  .box3 {
     padding: 80px 10px;
   }
   .sar {
@@ -771,7 +781,7 @@ option {
   }
   .full-span {
     margin-left: 20px;
-    font-size: 18px;
+ 
   }
   .grid {
     grid-template-columns: repeat(1, 1fr);
@@ -799,9 +809,12 @@ option {
     right: 10px;
     top: 10px;
   }
-   .social-icon{
-      flex-wrap: wrap;
-    }
+  .social-icon {
+    flex-wrap: wrap;
+  }
+  .full {
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -817,7 +830,6 @@ option {
   .singIn {
     padding: 28px 10px;
   }
-   
 }
 
 /* js class */
@@ -897,88 +909,115 @@ option {
 .scrolled {
   background-color: #444444;
 }
-.accordion-header{
+.accordion-header {
   padding: 0 !important;
 }
 .accordion-item {
   border: none !important;
-   box-shadow: none !important;
-   border-radius:0 !important;
-   padding: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
 }
 .accordion-item.accordion-button:not(.collapsed) {
   border-bottom: 1px solid #ffffff !important;
   box-shadow: none !important;
-  border-radius:0 !important;
+  border-radius: 0 !important;
 }
 .accordion-button {
   background-color: #272727 !important;
   color: #ededed !important;
   border: none !important;
   border-bottom: 1px solid #ffffff !important;
-   box-shadow: none !important;
-   border-radius:0 !important;
-   padding: 10px 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 20px 0 !important;
+  margin-bottom: 23px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .accordion-button.accordion-button:not(.collapsed) {
   border: none !important;
-   box-shadow: none !important;
-   border-radius:0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  margin-bottom: 0 !important;
 }
 .accordion-button::after {
   filter: invert(100%);
-   box-shadow: none !important;
-   border-radius:0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  margin-bottom: 0 !important;
 }
-.accordion-button::after:not(.collapsed){
-    filter: invert(100%) !important;
+.accordion-button::after:not(.collapsed) {
+  filter: invert(100%) !important;
 }
 .accordion-button:focus {
   box-shadow: none !important;
-   box-shadow: none !important;
-   border-radius:0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  margin-bottom: 0 !important;
 }
-.accordion-button:not(.collapsed):focus{
-    background-color: #272727 !important;
+.accordion-button:not(.collapsed):focus {
+  background-color: #272727 !important;
   color: #ededed !important;
-   border-radius:0 !important;
-   box-shadow: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 0 !important;
 }
 .accordion-button:not(.collapsed) {
   background-color: #272727 !important;
   color: #ededed !important;
   box-shadow: none !important;
-   border-radius:0 !important;
+  border-radius: 0 !important;
 }
 .accordion-body {
   background-color: #272727;
   color: #ededed;
-   box-shadow: none !important;
-      border-radius:0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
 }
 .accordion-body:not(.collapsed) {
   border-bottom: 1px solid #ffffff !important;
-   box-shadow: none !important;
-   border-radius:0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
 }
 .accordion-item {
-    border: none !important;
-    border-radius:0 !important;
+  border: none !important;
+  border-radius: 0 !important;
 }
 .accordion {
-    border: none !important;
-    box-shadow: none !important;
-    border-radius:0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+}
+.bg-ac {
+  background-color: #272727 !important;
 }
 
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23111111' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
 }
 
+.custom-flush .accordion {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+  background-color: transparent !important;
+}
+.custom-flush.accordion-item {
+  background-color: transparent !important;
+}
 .custom-flush .accordion-button {
   background-color: #dbdbdb !important;
   color: #000 !important;
   box-shadow: none !important;
+  margin-bottom: 23px !important;
 }
 .custom-flush .accordion-button:not(.collapsed) {
   background-color: #dbdbdb !important;
