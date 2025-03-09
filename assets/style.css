@@ -754,6 +754,7 @@ option {
     padding: 103px 0;
   }
 }
+
 @media (max-width: 600px) {
   .coloR {
     font-size: 18px;
