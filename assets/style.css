@@ -733,6 +733,10 @@ option {
     width: 40px !important;
     height: 20px !important;
   }
+  .full-h3 img{
+    width: 62px;
+    height: 62px;
+  }
 }
 @media (max-width: 768px) {
   .pt-885 {
@@ -791,8 +795,10 @@ option {
     height: 20px;
   }
   .full-h3 img {
-    width: 61px;
-    height: 61px;
+   .full-h3 img{
+    width: 83px;
+    height: 83px;
+  }
   }
   .footer-div1 {
     flex-direction: column;
@@ -823,8 +829,8 @@ option {
     font-size: 40px;
   }
   .full-h3 img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
   .navbar-item {
     padding: 100px 10px;
@@ -917,6 +923,10 @@ option {
   }
   .item-1 {
     gap: 38px;
+  }
+    .full-h3 img {
+    width: 30px;
+    height: 30px;
   }
 }
 
