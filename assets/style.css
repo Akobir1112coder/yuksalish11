@@ -9,7 +9,6 @@
   list-style: none;
   padding: 0;
   text-decoration: none;
-  font-family: "Neutral Face", sans-serif;
 }
 h1,
 h2,
@@ -78,18 +77,32 @@ label {
   font-weight: 500;
   font-size: 24px;
   line-height: 100%;
-  font-family: Neutral Face;
   cursor: pointer;
+}
+.c {
+  text-decoration: none;
+  color: #c0c0c0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  cursor: pointer;
+  font-family: Neutral Face, sans-serif;
+  text-transform: uppercase;
+}
+.fs {
+  font-size: 16px;
 }
 .box1 {
   background-image: url("../img/header/asosiy.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 30%;
+  padding: 0 240px 50px;
 }
 .container {
   max-width: 1433px;
   margin: auto;
+  padding: 0;
 }
 .pt-885 {
   padding-top: 885px;
@@ -107,7 +120,6 @@ label {
   font-weight: 400;
   font-size: 32px;
   color: #ffffffe5;
-  letter-spacing: 0%;
 }
 .navbar-item {
   display: flex;
@@ -120,6 +132,9 @@ label {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+}
+.item{
+  padding: 0;
 }
 .span-img {
   display: none;
@@ -247,6 +262,7 @@ label {
   line-height: 100%;
   color: #666666;
   margin-left: 122px;
+  margin-top: 23px;
 }
 
 /* box4 */
@@ -343,6 +359,7 @@ label {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 40px;
 }
 .animation-bloked-ul {
   display: flex;
@@ -499,7 +516,6 @@ label {
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: #666666;
 }
 .href {
@@ -550,6 +566,9 @@ option {
 /* <-...................-> */
 
 @media (max-width: 1440px) {
+  .box1 {
+    padding: 0 60px 50px;
+  }
   .navbar {
     max-width: 1320px;
     margin: auto;
@@ -585,8 +604,14 @@ option {
     border: none !important;
     border-bottom: none !important;
   }
+    .navbar-item{
+    gap: 40px;
+  }
 }
 @media (max-width: 1280px) {
+  .box1 {
+    padding: 0 30px 50px;
+  }
   .navbar {
     max-width: 1220px;
     margin: auto;
@@ -609,6 +634,12 @@ option {
   }
   .singIn {
     padding: 111px 0;
+  }
+  .c{
+    font-size: 16px ;
+  }
+  .navbar-item{
+    gap: 30px;
   }
 }
 @media (max-width: 1200px) {
@@ -649,6 +680,7 @@ option {
   .c {
     color: #666666;
     text-transform: uppercase;
+    font-size: 36px;
   }
   .fs {
     font-size: 24px;
@@ -659,11 +691,15 @@ option {
     right: 30px;
     top: 36px;
   }
-  .c {
-    font-size: 28px;
-  }
+ 
 }
 @media (max-width: 1024px) {
+  .h1 {
+    font-size: 48px;
+  }
+  .box1-text {
+    font-size: 24px;
+  }
   .box2,
   .box4,
   .box6,
@@ -676,6 +712,10 @@ option {
   .gruop-22 {
     flex-direction: column;
   }
+  .group_left {
+    width: 100%;
+    max-width: 100%;
+  }
   .group_right {
     max-width: 100%;
     overflow: hidden;
@@ -685,11 +725,24 @@ option {
     height: 100%;
     object-fit: cover;
   }
+  .accordion-button::after {
+    width: 40px !important;
+    height: 20px !important;
+  }
+  .accordion-button::after.accordion-body:not(.collapsed) {
+    width: 40px !important;
+    height: 20px !important;
+  }
 }
 @media (max-width: 768px) {
+  .pt-885 {
+    padding-top: 1170px;
+  }
+  .box1 {
+    padding: 0 30px 100px;
+  }
   .container {
     width: 100%;
-    padding: 10px;
   }
   .navbar-item {
     padding: 150px 30px;
@@ -719,11 +772,9 @@ option {
     margin-left: 42px;
     font-size: 24px;
     padding-right: 10px;
-       font-size: 18px;
+    font-size: 18px;
   }
-  .full-h3 {
-    font-size: 32px;
-  }
+
   .grid-col {
     grid-template-columns: repeat(1, 1fr);
     column-gap: 0px;
@@ -754,6 +805,9 @@ option {
   .singIn {
     padding: 103px 0;
   }
+  .pt-885 {
+    padding-top: 697px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -762,6 +816,12 @@ option {
   }
 }
 @media (max-width: 480px) {
+  .box1 {
+    padding: 0 10px 30px;
+  }
+  .full-h3 {
+    font-size: 40px;
+  }
   .full-h3 img {
     width: 40px;
     height: 40px;
@@ -783,7 +843,6 @@ option {
   }
   .full-span {
     margin-left: 20px;
- 
   }
   .grid {
     grid-template-columns: repeat(1, 1fr);
@@ -817,8 +876,27 @@ option {
   .full {
     padding-right: 10px;
   }
+  .accordion-button::after {
+    width: 30px !important;
+    height: 15px !important;
+  }
+  .accordion-button::after.accordion-body:not(.collapsed) {
+    width: 30px !important;
+    height: 15px !important;
+  }
+  .footer {
+    padding: 40px 10px;
+  }
+  .fs{
+    font-size: 16px;
+  }
+  
 }
-
+@media (max-width: 390px){
+  .or{
+    order: 3;
+  }
+}
 @media (max-width: 320px) {
   .navbar-item {
     padding: 60px 10px;
@@ -832,6 +910,17 @@ option {
   .singIn {
     padding: 28px 10px;
   }
+  .c{
+    font-size: 28px;
+  }
+  .fs{
+    font-size: 16px;
+  }
+  .item-1{
+    gap: 38px;
+  }
+ 
+ 
 }
 
 /* js class */
@@ -856,7 +945,7 @@ option {
     transform: translate(0%, 0);
   }
   100% {
-    transform: translate(20%, -100%);
+    transform: translate(-100%, 0%);
   }
 }
 .rotate-180 {
@@ -933,12 +1022,12 @@ option {
   box-shadow: none !important;
   border-radius: 0 !important;
   padding: 20px 0 !important;
-  margin-bottom: 23px !important;
+
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
 }
-.accordion-button.accordion-button:not(.collapsed) {
+.accordion-button:not(.collapsed) {
   border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
@@ -949,9 +1038,16 @@ option {
   box-shadow: none !important;
   border-radius: 0 !important;
   margin-bottom: 0 !important;
+  width: 69px;
+  height: 34px;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 .accordion-button::after:not(.collapsed) {
   filter: invert(100%) !important;
+  width: 69px;
+  height: 34px;
 }
 .accordion-button:focus {
   box-shadow: none !important;
@@ -977,6 +1073,7 @@ option {
   color: #ededed;
   box-shadow: none !important;
   border-radius: 0 !important;
+  padding: 0 !important;
 }
 .accordion-body:not(.collapsed) {
   border-bottom: 1px solid #ffffff !important;
@@ -1019,7 +1116,6 @@ option {
   background-color: #dbdbdb !important;
   color: #000 !important;
   box-shadow: none !important;
-  margin-bottom: 23px !important;
 }
 .custom-flush .accordion-button:not(.collapsed) {
   background-color: #dbdbdb !important;
