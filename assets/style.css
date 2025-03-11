@@ -337,6 +337,7 @@ label {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding: 20px 0;
   display: none;
 }
 .information-items {
@@ -517,6 +518,9 @@ label {
   font-size: 14px;
   line-height: 100%;
   color: #666666;
+}
+.cheked{
+  margin-right: 10px;
 }
 .href {
   font-family: Inter;
